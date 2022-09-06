@@ -1,1 +1,7 @@
-print("J")
+ChangeColor = script.Parent
+
+--Random Color Script
+while true do
+	ChangeColor.BrickColor = BrickColor.Random()
+	wait(1)	
+end
