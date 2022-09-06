@@ -1,0 +1,11 @@
+changeColor = script.Parent
+
+--Put changeColor in a function
+function keepChanging()
+	changeColor.BrickColor = BrickColor.Random()
+end
+
+while true do
+	keepChanging()
+	wait(1.5)
+end
