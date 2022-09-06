@@ -1,0 +1,11 @@
+changeColor = script.Parent
+
+--Change the following two colors in a forever loop
+while true do
+	changeColor.BrickColor = BrickColor.new("Cyan")
+	wait(0.5)
+	changeColor.BrickColor = BrickColor.new("Pink")
+	wait(0.5)
+end
+
+--Challenge students to have 5 colors in a forever loop
