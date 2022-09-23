@@ -1,0 +1,11 @@
+local speedBoost = script.Parent
+
+local function SteppedOn(part)
+	local parent = part.Parent
+	if game.Players:GetPlayerFromCharacter(parent) then
+  --Students can change the below speed number
+		parent.Humanoid.WalkSpeed = 30
+	end
+end
+
+speedBoost.Touched:connect(SteppedOn)
