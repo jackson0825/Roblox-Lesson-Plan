@@ -1,0 +1,13 @@
+local speedBoost = script.Parent
+
+local function SteppedOn(part)
+	local parent = part.Parent
+	if game.Players:GetPlayerFromCharacter(parent) then
+		parent.Humanoid.WalkSpeed = 50
+    -- Explain to students that after 5seconds, the player walkspeed will be return to normal
+		wait(5)
+		parent.Humanoid.WalkSpeed = 16
+	end
+end
+
+speedBoost.Touched:connect(SteppedOn)
