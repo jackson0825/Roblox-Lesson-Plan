@@ -4,7 +4,7 @@ local function SteppedOn(part)
 	local parent = part.Parent
 	if game.Players:GetPlayerFromCharacter(parent) then
   --Students can change the below speed number
-		parent.Humanoid.WalkSpeed = 30
+		parent.Humanoid.WalkSpeed = 50
 	end
 end
 
